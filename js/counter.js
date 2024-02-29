@@ -14,10 +14,16 @@ counters.forEach(counter => {
 
 		// Check if target is reached
 		if (count < target) {
-			// Add inc to count and output in counter
-			counter.innerText = Math.trunc(count + inc);
-			// Call function every ms
-			setTimeout(updateCount, 2);
+			if(Math.trunc(count + inc) == 0)
+				{
+					counter.innerText = target;
+					setTimeout(updateCount, 2);
+				}
+				else{
+				counter.innerText = Math.trunc(count + inc);
+				// Call function every ms
+				setTimeout(updateCount, 2);
+				}
 		} else {
 			counter.innerText = target;
 		}
