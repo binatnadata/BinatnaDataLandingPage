@@ -227,7 +227,7 @@ Primary use:
     -1px 1px 0 #fff;
 }
 .wrappic1 > a > h3 > span {
-  color: orange;
+  color: #ffa500;
 }
 
 /*---------------------------------------------*/
@@ -357,6 +357,8 @@ Primary use:
     transform: translateX(calc(-250px * 7));
   }
 }
+
+
 
 /*==================================================================
   RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE
